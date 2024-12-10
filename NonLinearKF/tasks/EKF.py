@@ -14,11 +14,6 @@ class EKF:
     def __init__(self, R):
         """
         Initialize the EKF with necessary parameters.
-
-        Args:
-            dt: Time step of the system.
-            process_noise_covariance: Covariance matrix of process noise.
-            measurement_noise_covariance: Covariance matrix of measurement noise.
         """
 
         # State = [x, y, z, roll, pitch, yaw, vx, vy, vz, bgx, bgy, bgz, bax, bay, baz]
