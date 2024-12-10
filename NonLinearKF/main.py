@@ -75,9 +75,9 @@ def main():
             orientations.append(orientation)
             positions.append(position)
     
-        # print("-----Estimating Covariance-----")
+        # print("-----Estimating Measurement Noise Covariance (R)-----")
         covariance = estimateCovariances(data_estimates, ground_truth, positions, orientations)
-        print("Covarince Estimates for dataset " + file_name + ": ")
+        print("Measurement Noise Covariance Estimates for dataset " + file_name + ": ")
         print(covariance)
         covariances.append(covariance)
 
